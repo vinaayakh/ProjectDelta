@@ -1,0 +1,16 @@
+<ng-container *ngIf="animeDetails">
+    <div class="anime-card">
+        <div class="anime-card-image">
+            <img [src]="animeDetails.image_url" alt="">
+        </div>
+        <div class="anime-card-title">
+            <h3>{{animeDetails.title}}</h3>
+        </div>
+        <div class="anime-card-score" *ngIf="animeDetails.score">
+            <span class="score">Score</span><span class="score-badge">{{animeDetails.score}}</span>
+        </div>
+        <div class="anime-card-air">
+            <span class="eps" *ngIf="animeDetails.episodes">{{animeDetails.episodes}} Eps</span><span class="source">{{animeDetails.source}}</span>
+        </div>
+    </div>
+</ng-container>

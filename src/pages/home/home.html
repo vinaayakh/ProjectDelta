@@ -1,14 +1,24 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      <button class="btn header-button"><ion-icon name="options"></ion-icon></button>
+      <span class="header-title">BROWSE ANIME</span>
+      <button class="btn header-button"><ion-icon name="search"></ion-icon></button>
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  <div class="list">
+    <list-component></list-component>
+  </div>
 </ion-content>
+<ion-footer class="custom-footer">
+    <ion-toolbar>
+        <button class="btn footer-button"><ion-icon name="play"></ion-icon></button>
+        <button class="btn footer-button"><ion-icon name="albums"></ion-icon></button>
+        <button class="btn footer-button"><ion-icon name="md-appstore"></ion-icon></button>
+        <button class="btn footer-button"><ion-icon name="notifications"></ion-icon></button>
+        <button class="btn footer-button"><ion-icon name="md-person"></ion-icon></button>
+    </ion-toolbar>
+  </ion-footer>

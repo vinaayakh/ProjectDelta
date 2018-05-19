@@ -1,3 +1,35 @@
-page-home {
+.header-button{
+    width: 10%;
+    font-size: 1.3em;
+}
 
+.footer-button{
+    width: 19%;
+    font-size: 1.7em
+}
+
+.header-button,.footer-button{
+    color: white;
+    background: transparent;
+}
+
+.header-title{
+    display: inline-block;
+    width: 80%;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+.list{
+    margin: 0;
+    margin-top: 38px;
+    display: block;
+    padding: 0;
+}
+.custom-footer{
+    background-color: darken(#513669,2%);
+    height:70px;
+    .toolbar{
+        height:70px;
+    }
 }
