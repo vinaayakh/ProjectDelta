@@ -10,7 +10,7 @@ import { seasonalDataModel } from '../../modals/seasonal-data.model';
 export class ListComponent implements OnInit {
 
   constructor(public navCtrl: NavController, private _seasonalData: SeasonalDataService) { }
-  seasonalList: Array<seasonalDataModel>;
+  seasonalList: Array<seasonalDataModel> =  [];
 
   ngOnInit() {
     this.getSeasonalAnime();
@@ -18,9 +18,8 @@ export class ListComponent implements OnInit {
 
   getSeasonalAnime() {
     this._seasonalData.getSeasonalAnime().subscribe(SeasonalResponse => {
-      if (SeasonalResponse.status == 200) {
-        this.seasonalList = SeasonalResponse.json().season;
-        console.log(this.seasonalList);
+      if(SeasonalResponse.length>0){
+        this.seasonalList = SeasonalResponse;
       }else{
         console.log(SeasonalResponse);
       }

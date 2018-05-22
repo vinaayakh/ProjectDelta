@@ -22,7 +22,6 @@ export class seasonalDataModel {
         public image_url: String = '',
         public kids: Boolean = false,
         public licensor: Array<String> = [],
-        public mal_id: Number = 0,
         public members: Number = 0,
         public producer: Array<any> = [],
         public r18_plus: Boolean = false,

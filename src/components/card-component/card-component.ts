@@ -57,7 +57,7 @@ export class CardComponent {
   // }
 
   constructor(public navCtrl: NavController) { 
-    console.log(this.animeDetails)
+    console.log(this.animeDetails);
   }
 
 
